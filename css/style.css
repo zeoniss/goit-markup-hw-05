@@ -42,6 +42,7 @@ body {
 }
 
 .link-header-font {
+    bottom: 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -79,15 +80,17 @@ body {
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--primary-title-color);
+    transition: color 250ms var(--timing-function);
 }
 
 .site-nav .current {
-    position: relative;
     color: var(--accent-color);
+    position: relative;
 }
 
 .site-nav .current::after {
     content: '';
+    position: absolute;
     bottom: 0;
     right: 0;
     display: block;
@@ -112,6 +115,7 @@ body {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+    transition: color 250ms var(--timing-function);
 }
 
 .auth-nav>.item+.item {
@@ -185,6 +189,7 @@ main .text {
     --tital-color: black;
     --accent-color: #2196f3;
     --text-title: #212121;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .business {
@@ -430,7 +435,24 @@ main .text {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+}
+
+.link>.member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color 250ms var(--timing-function);
+}
+
+.font {
+    display: block;
+    width: 20px;
+    height: 20px;
     fill: #afb1b8;
+    transition: fill 250ms var(--timing-function);
 }
 
 .font {
@@ -569,7 +591,7 @@ main .text {
     background-color: #2196f3;
     transition-property: opacity;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: var(--timing-function);
 }
 
 .optic:hover::before {
