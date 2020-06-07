@@ -437,16 +437,6 @@ main .text {
     border-radius: 50%;
 }
 
-.link>.member {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    transition: background-color 250ms var(--timing-function);
-}
-
 .font {
     display: block;
     width: 20px;
