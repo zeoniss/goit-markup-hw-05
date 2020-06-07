@@ -417,23 +417,24 @@ main .text {
     color: #757575;
 }
 
-.link {
-    display: flex;
-    padding-top: 16px;
-    padding-bottom: 24px;
-    justify-content: center;
-    transition: background-color 2500ms var(--timing-function);
-}
-
 .link .social-link:not(:last-child) {
     margin-right: 10px;
 }
 
-.soc {
+.link {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.social-link {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .font {
