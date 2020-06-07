@@ -443,9 +443,6 @@ main .text {
     height: 20px;
     fill: #afb1b8;
     transition: fill 250ms var(--timing-function);
-}
-
-.font {
     --color3: #fff;
     --color4: #afb1b8;
     width: 44px;
