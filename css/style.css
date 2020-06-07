@@ -3,6 +3,15 @@ body {
     letter-spacing: 0.03em;
 }
 
+:root {
+    --primary-color: #757575;
+    --tital-color: black;
+    --accent-color: #2196f3;
+    --text-title: #212121;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --svg-color: #afb1b8;
+}
+
 .break {
     margin: 0;
     padding: 0;
@@ -155,12 +164,6 @@ main .text {
     padding-bottom: 94px;
 }
 
-.clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    background-color: white;
-}
-
 .member {
     width: 270px;
     padding-bottom: 11px;
@@ -182,14 +185,6 @@ main .text {
     font-size: 44px;
     line-height: 1.36;
     text-transform: uppercase;
-}
-
-:root {
-    --primary-color: #757575;
-    --tital-color: black;
-    --accent-color: #2196f3;
-    --text-title: #212121;
-    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .business {
@@ -469,6 +464,12 @@ main .text {
     margin-right: 30px;
 }
 
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: white;
+}
+
 .logotype {
     display: flex;
     margin-top: 50px;
@@ -480,9 +481,10 @@ main .text {
     align-items: center;
     height: 90px;
     min-width: 170px;
-    fill: #afb1b8;
+    fill: var(--svg-color);
     border: 1px solid #afb1b8;
     border-radius: 4px;
+    transition: border 250ms var(--timing-function);
 }
 
 .icon:hover {
@@ -494,6 +496,10 @@ main .text {
 .icon:focus {
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
+}
+
+.brand {
+    transition: fill 250ms var(--timing-function);
 }
 
 .brand:hover {
