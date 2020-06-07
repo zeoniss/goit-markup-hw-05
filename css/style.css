@@ -422,6 +422,7 @@ main .text {
     padding-top: 16px;
     padding-bottom: 24px;
     justify-content: center;
+    transition: background-color 2500ms var(--timing-function);
 }
 
 .link .social-link:not(:last-child) {
@@ -432,8 +433,6 @@ main .text {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 44px;
-    height: 44px;
     border-radius: 50%;
 }
 
@@ -441,12 +440,10 @@ main .text {
     display: block;
     width: 20px;
     height: 20px;
-    fill: #afb1b8;
-    transition: fill 250ms var(--timing-function);
-    --color3: #fff;
-    --color4: #afb1b8;
     width: 44px;
     height: 44px;
+    --color3: #fff;
+    --color4: #afb1b8;
 }
 
 .font:hover {
