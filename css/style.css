@@ -427,7 +427,7 @@ main .text {
     margin-bottom: 24px;
 }
 
-.social-link {
+.soc {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -435,6 +435,9 @@ main .text {
     height: 44px;
     border-radius: 50%;
     cursor: pointer;
+    transition: all;
+    transition-duration: 2000ms;
+    transition-timing-function: var(--timing-function);
 }
 
 .font {
@@ -447,7 +450,14 @@ main .text {
     --color4: #afb1b8;
 }
 
-.font:hover {
+.font:hover,
+.font:focus {
+    --color3: var(--accent-color);
+    --color4: white;
+}
+
+.soc:hover,
+.soc:focus {
     --color3: var(--accent-color);
     --color4: white;
 }
