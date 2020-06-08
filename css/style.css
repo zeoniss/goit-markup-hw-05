@@ -536,6 +536,7 @@ main .text {
 
 .optic {
     position: relative;
+    overflow: hidden;
 }
 
 .message {
