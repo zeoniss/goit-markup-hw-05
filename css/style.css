@@ -427,24 +427,17 @@ main .text {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.font {
-    display: block;
-    width: 20px;
-    height: 20px;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    cursor: pointer;
-    fill: var(--color4, #afb1b8);
-    transition: all 2500ms var(--timing-function);
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.font:hover,
-.font:focus {
-    --color3: var(--accent-color);
-    --color4: #ffffff;
+.soc:focus,
+.soc:hover {
+    background-color: var(--accent-color);
+    fill: white;
 }
 
 
